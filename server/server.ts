@@ -10,7 +10,7 @@ const bodyParser = require('body-parser');
 
 
 // Set the port to 3001
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 interface Admin {
   roomId: string
@@ -29,7 +29,7 @@ const playlistObj = {};
 const statusObj = {};
 
 
-app.set("port", process.env.PORT || 3001);
+app.set("port", PORT);
 // support parsing of application/json type post data
 app.use(bodyParser.json());
 
@@ -293,6 +293,6 @@ io.of('movie')
 })
 
 http.listen(PORT, '0.0.0.0',() => {
-  console.log('listening on *:3001');
+  console.log('listening on *', PORT);
 });
 
