@@ -10,7 +10,7 @@ const config = {
   entry: './src/index.tsx',
   output: {
     filename: 'build.js',
-    path: __dirname,
+    path: __dirname+ '/test',
     publicPath: '/js/',
   },
   devServer: {

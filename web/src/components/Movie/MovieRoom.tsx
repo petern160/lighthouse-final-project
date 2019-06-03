@@ -11,6 +11,7 @@ import Cookies from 'universal-cookie';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+const mainbg = require('./img/main.png');
 
 
 let playedFraction: number;
@@ -237,10 +238,6 @@ const MovieRoom = (props) => {
           <div
             id="hero"
             className="Hero re-size"
-            style={{
-              backgroundImage:
-                "url(http://4.bp.blogspot.com/-6P26BXYKrr0/XJfw2gPg7EI/AAAAAAAAD74/jjQiFA4KowgVXBqgEHXA7nzyK38ULMqUQCK4BGAYYCw/s1600/EndgameWallpaper.png)"
-            }}
           >
             <div>
             

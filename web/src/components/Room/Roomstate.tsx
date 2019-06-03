@@ -2,6 +2,7 @@ import * as React from 'react';
 import axios from 'axios';
 import "./room.scss";
 import {useState, useEffect} from 'react';
+const loading = require('./img/loading.gif');
 
 
 
@@ -56,7 +57,7 @@ const Roomstate = (props) => {
               <h1 className="room-title">{roomId}</h1>
               <img
                 className="picture-sizing"
-                src={state && state.videoData.thumbnails.high.url || "https://cdn.dribbble.com/users/1498470/screenshots/4498386/hourglass.gif"}
+                src={state && state.videoData.thumbnails.high.url || loading}
               />
               {state && <p>Currently Playing... <br/> {state && state.videoData.title}</p>}
             </div>

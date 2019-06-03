@@ -46,10 +46,10 @@ const Movie: React.FunctionComponent<Home> = props => {
       
           <div className="background-imgh">
           <div className = "public-room-spacing">
-        <Link className="nav-hover-on public-room-home " to="/publicroom" style={{ textDecoration: "none", color: "white" }}>
+        {/* <Link className="nav-hover-on public-room-home " to="/publicroom" style={{ textDecoration: "none", color: "white" }}> */}
        {/* <button className="button btn-grad-public  ">Join Public Rooms</button>  */}
-       <a href="#" style={{color:'white'}} className=" button btn-grad-public bttn-public"><h3 style={{fontWeight:'bold'}}>Join Public Rooms</h3></a>
-      </Link>
+       <a href="/publicroom" style={{color:'white'}} className=" button btn-grad-public bttn-public"><h3 style={{fontWeight:'bold'}}>Join Public Rooms</h3></a>
+      {/* </Link> */}
       </div>
             <div className="boxh">
               <span></span>

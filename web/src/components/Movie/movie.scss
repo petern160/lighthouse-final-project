@@ -1,3 +1,5 @@
+
+
 ::-webkit-scrollbar {
   width: 0.125rem;
   height: 0.1em;
@@ -175,7 +177,8 @@ p {
 .Hero {
   width: 100%;
   position: relative;
-  background-size: cover;
+	background-size: cover;
+	background-image: url('./img/main.png');	
   min-height: 800px;
 
   .content {
@@ -676,7 +679,7 @@ p {
 
 @media screen and (max-width: 600px) {
   .Hero {
-    background-image: url("http://4.bp.blogspot.com/-6P26BXYKrr0/XJfw2gPg7EI/AAAAAAAAD74/jjQiFA4KowgVXBqgEHXA7nzyK38ULMqUQCK4BGAYYCw/s1600/EndgameWallpaper.png");
+    background-image: url("./img/main.png");
     background-size: cover;
     background-position: center center;
   }
@@ -684,7 +687,7 @@ p {
 
 @media screen and (max-width: 1200px) {
   .Hero {
-    background-image: url("http://4.bp.blogspot.com/-6P26BXYKrr0/XJfw2gPg7EI/AAAAAAAAD74/jjQiFA4KowgVXBqgEHXA7nzyK38ULMqUQCK4BGAYYCw/s1600/EndgameWallpaper.png");
+    background-image: url("./img/main.png");
     background-size: cover;
     background-position: center;
   }
@@ -692,7 +695,7 @@ p {
 
 @media screen and (max-width: 400px) {
   .Hero {
-    background-image: url("http://4.bp.blogspot.com/-6P26BXYKrr0/XJfw2gPg7EI/AAAAAAAAD74/jjQiFA4KowgVXBqgEHXA7nzyK38ULMqUQCK4BGAYYCw/s1600/EndgameWallpaper.png");
+    background-image: url("./img/main.png");
     background-size: cover;
     background-position: center center;
     width: 100vw;
