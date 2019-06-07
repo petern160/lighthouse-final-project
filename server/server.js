@@ -1,4 +1,3 @@
-"use strict";
 require('dotenv').config();
 var cors = require('cors');
 var express = require('express');
@@ -105,7 +104,7 @@ app.get('/api/youtube/:query', function (req, res) {
         }
     }).then(function (result) {
         res.json(result.data.items);
-    }).catch(function (error) { return console.log(error); });
+    })["catch"](function (error) { return console.log(error); });
 });
 io.of('movie')
     .on('connection', function (socket) {
@@ -164,7 +163,7 @@ io.of('movie')
                 statusObj[roomObject.roomId][socket.id] = true;
             }
             // update public room to reflect number of clients
-            io.of('/movie').in(roomId).clients(function (error, clients) {
+            io.of('/movie')["in"](roomId).clients(function (error, clients) {
                 if (error)
                     throw error;
                 io.of('movie').emit("send number of clients", ({
@@ -210,7 +209,7 @@ io.of('movie')
             });
             socket.on('disconnect', function () {
                 console.log('socket disconnected');
-                io.of('/movie').in(roomId).clients(function (error, clients) {
+                io.of('/movie')["in"](roomId).clients(function (error, clients) {
                     if (error)
                         throw error;
                     io.of('movie').emit("send number of clients", ({
@@ -225,7 +224,7 @@ io.of('movie')
         });
     });
     socket.on('get number of clients', function (roomId) {
-        io.of('/movie').in(roomId).clients(function (error, clients) {
+        io.of('/movie')["in"](roomId).clients(function (error, clients) {
             if (error)
                 throw error;
             io.of('movie').emit("send number of clients", ({
