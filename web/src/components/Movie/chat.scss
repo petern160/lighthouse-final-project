@@ -1,209 +1,234 @@
 /* CUSTOM SCROLLBAR FOR CHATBOX */
-.chats::-webkit-scrollbar { width: 0.125rem; }
-.chats::-webkit-scrollbar-thumb { background: #CFD8DC; }
-.chats::-webkit-scrollbar-thumb:hover { background: #B0BEC5; }
+.chats::-webkit-scrollbar {
+  width: 0.125rem;
+}
+.chats::-webkit-scrollbar-thumb {
+  background: #cfd8dc;
+}
+.chats::-webkit-scrollbar-thumb:hover {
+  background: #b0bec5;
+}
 /* INPUT TEXT PLACEHOLDER CUSTOMIZE */
-::-webkit-input-placeholder { color: #B0BEC5; }
-::-moz-placeholder { color: #B0BEC5; }
-:-ms-input-placeholder { color: #B0BEC5; }
-:-moz-placeholder { color: #B0BEC5; }
+::-webkit-input-placeholder {
+  color: #b0bec5;
+}
+::-moz-placeholder {
+  color: #b0bec5;
+}
+:-ms-input-placeholder {
+  color: #b0bec5;
+}
+:-moz-placeholder {
+  color: #b0bec5;
+}
 
-#viewport { 
-	display: flex;
-	flex: 1;
-	justify-content: center;
+#viewport {
+  display: flex;
+  flex: 1;
+  justify-content: center;
   align-items: center;
 }
 
-
-
 #viewport > .chatbox {
-	position: relative;
-	display: flex;
-	justify-content: flex-end;
-	left: -2vw;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  left: -2vw;
 
-	// margin: 1rem;
-	width: 20rem;
-	height: 27em;
-	background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
-	opacity: 0.9;
-	box-shadow: 0 0.25rem 2rem rgba(38,50,56, 0.1);
+  // margin: 1rem;
+  width: 20rem;
+  height: 27em;
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  opacity: 0.9;
+  box-shadow: 0 0.25rem 2rem rgba(38, 50, 56, 0.1);
   // overflow: hidden;
 }
 #viewport > .chatbox > .chats {
-	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;	
-	display: table-cell;
-	vertical-align: bottom;
-	padding: 1rem;
-	margin-bottom: 2.875rem;
-	overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: table-cell;
+  vertical-align: bottom;
+  padding: 1rem;
+  margin-bottom: 2.875rem;
+  overflow-y: auto;
 }
-ul { padding: 0; }
+ul {
+  padding: 0;
+}
 ul > li {
-	position: relative;
-	list-style: none;
-	display: block;
-	margin-top: 1.5rem;
-	margin: 1rem 0;
-	transition: 0.5s all;
+  position: relative;
+  list-style: none;
+  display: block;
+  margin-top: 1.5rem;
+  margin: 1rem 0;
+  transition: 0.5s all;
 }
 ul > li:after {
-	display: table;
-	content: '';
-	clear: both;
+  display: table;
+  content: "";
+  clear: both;
 }
 
 #chats ul {
-	margin-left: 0.5rem;
+  margin-left: 0.5rem;
 }
-.msg {		
-	max-width: 85%;
-	display: inline-block;
-	padding: 0.5rem 1rem;
-	line-height: 1rem;
-	min-height: 2rem;
-	font-size: 0.875rem;
-	border-radius: 1rem;
-	margin-bottom: 0.5rem;
-	word-break: break-word;
+.msg {
+  max-width: 85%;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  line-height: 1rem;
+  min-height: 2rem;
+  font-size: 0.875rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  word-break: break-word;
 }
 .msg.him {
-	float: left;
-	background-color: rgb(32, 25, 27);
-	color: #fff;
-	border-bottom-left-radius: 0.125rem;
+  float: left;
+  background-color: rgb(32, 25, 27);
+  color: #fff;
+  border-bottom-left-radius: 0.125rem;
 }
 .msg.you {
-	float: right;
-	background-color: #ECEFF1;
-	color: #607D8B;
-	border-bottom-right-radius: 0.125rem;
+  float: right;
+  background-color: #eceff1;
+  color: #607d8b;
+  border-bottom-right-radius: 0.125rem;
 }
-.msg.load { 
-	background-color: #F8BBD0; 
-	border-bottom-left-radius: 0.125rem;
+.msg.load {
+  background-color: #f8bbd0;
+  border-bottom-left-radius: 0.125rem;
 }
 .msg > span {
-	font-weight: 500;
-	position: absolute;
+  font-weight: 500;
+  position: absolute;
 }
 .msg > span.partner {
-	color: #B0BEC5;
-	font-size: 0.5rem;
-	top: 0;
-	font-size: 0.675rem;
-	margin-top: -1rem;
+  color: #b0bec5;
+  font-size: 0.5rem;
+  top: 0;
+  font-size: 0.675rem;
+  margin-top: -1rem;
 }
 .msg > span.time {
-	color: #CFD8DC;
-	font-size: 0.5rem;
-	bottom: -0.35rem;
-	display: none;
+  color: #cfd8dc;
+  font-size: 0.5rem;
+  bottom: -0.35rem;
+  display: none;
 }
-.msg:hover span.time { display: block; }
-.msg.him > span { left: 0;	 }
-.msg.you > span {	right: 0; }
+.msg:hover span.time {
+  display: block;
+}
+.msg.him > span {
+  left: 0;
+}
+.msg.you > span {
+  right: 0;
+}
 .sendBox {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
 }
 .sendBox input {
-	font-family: 'Lato', sans-serif;
-	font-size: 0.875rem;
-	display: block;
-	width: 100%;
-	border: none;
-	padding: 0.75rem 0.75rem;
-	line-height: 1.25rem;
-	border-top: 0.125rem solid #ECEFF1;
-	transition: 0.5s ease-in-out;
+  font-family: "Lato", sans-serif;
+  font-size: 0.875rem;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0.75rem 0.75rem;
+  line-height: 1.25rem;
+  border-top: 0.125rem solid #eceff1;
+  transition: 0.5s ease-in-out;
 }
 input:hover,
 input:focus,
-input:active { 
-	outline: none!important; 
-	border-top: 0.125rem solid #E91E63;
+input:active {
+  outline: none !important;
+  border-top: 0.125rem solid #e91e63;
 }
 
 /*  LOADING MESSAGE CSS */
 .load .dot {
-	display: inline-block;
-	width: 0.375rem;
-	height: 0.375rem;
-	border-radius: 0.25rem;
-	margin-right: 0.125rem;
-	background-color: rgba(255,255,255,0.75);	
+  display: inline-block;
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 0.25rem;
+  margin-right: 0.125rem;
+  background-color: rgba(255, 255, 255, 0.75);
 }
-.load .dot:nth-last-child(1) {animation: loadAnim 1s .2s linear infinite;}
-.load .dot:nth-last-child(2) {animation: loadAnim 1s .4s linear infinite;}
-.load .dot:nth-last-child(3) {animation: loadAnim 1s .6s linear infinite;}
+.load .dot:nth-last-child(1) {
+  animation: loadAnim 1s 0.2s linear infinite;
+}
+.load .dot:nth-last-child(2) {
+  animation: loadAnim 1s 0.4s linear infinite;
+}
+.load .dot:nth-last-child(3) {
+  animation: loadAnim 1s 0.6s linear infinite;
+}
 @keyframes loadAnim {
-    0 {transform: translate(0,0);}
-    25% {transform: translate(0,-0.25rem);}
-    50% {transform: translate(0,0);}
+  0 {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, -0.25rem);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
 }
 
-
-
-@media screen and (max-width: 1400px){
-	  #viewport > .chatbox{
-		top: 0.1em !important;
-		left: 4.7em !important;
-		right: 10em !important;
-		bottom: 10em !important;
-	
-	}
+@media screen and (max-width: 1400px) {
+  #viewport > .chatbox {
+    top: 0.1em !important;
+    left: 4.7em !important;
+    right: 10em !important;
+    bottom: 10em !important;
+  }
 }
 
-
-@media screen and (max-width: 1200px){
-	#viewport > .chatbox{
-	top: 0.1em !important;
-	left: -7em !important;
-	// right: 10em !important;
-	// bottom: 10em !important;
-
-}
+@media screen and (max-width: 1200px) {
+  #viewport > .chatbox {
+    top: 0.1em !important;
+    left: -7em !important;
+    // right: 10em !important;
+    // bottom: 10em !important;
+  }
 }
 
-@media screen and (max-width: 700px){
-	#viewport > .chatbox{
-	top: 0.1em !important;
-	left: -7em !important;
-	// right: 10em !important;
-	// bottom: 10em !important;
-
-}
-}
-
-@media screen and (max-width: 1350px){
-	#viewport > .chatbox {
-		top: 0.1em !important;
-		left: -9em !important;
-		// right: 100px !important;
-}
+@media screen and (max-width: 700px) {
+  #viewport > .chatbox {
+    top: 0.1em !important;
+    left: -7em !important;
+    // right: 10em !important;
+    // bottom: 10em !important;
+  }
 }
 
-
-
-@media screen and (max-width: 1650px){
-	#viewport > .chatbox{
-	top: 0.1em !important;
-	left: 0em !important;
-	// right: 10em !important;
-	// bottom: 10em !important;
-
-}
+@media screen and (max-width: 1350px) {
+  #viewport > .chatbox {
+    top: 0.1em !important;
+    left: -9em !important;
+    // right: 100px !important;
+  }
 }
 
+@media screen and (max-width: 1650px) {
+  #viewport > .chatbox {
+    top: 0.1em !important;
+    left: 0em !important;
+    // right: 10em !important;
+    // bottom: 10em !important;
+  }
+}
 
-@media screen and (max-width: 900px){
-	#viewport {
-		display:none;
-	}
+@media screen and (max-width: 900px) {
+  #viewport {
+    display: none;
+  }
 }

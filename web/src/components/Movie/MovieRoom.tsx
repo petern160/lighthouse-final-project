@@ -14,6 +14,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 const mainbg = require('./img/main.jpeg');
 
 
+
 let playedFraction: number;
 let duration: number;
 
@@ -200,13 +201,12 @@ const MovieRoom = (props) => {
             <nav>
               
               <ul>
+            
              
                 <li>
                 <Link to="/publicroom" style={{ textDecoration: 'none', color: 'white' }}>Browse</Link>
                 </li>
-                <li>
-                  
-                </li>
+               
                 <li></li>
                 <li>
                 <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>Home</Link>

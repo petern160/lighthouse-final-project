@@ -1,5 +1,6 @@
 # Chee-tah
 Final Project for Lighthouse Lab's Web Development Bootcamp
+Deployed on heroku at: https://chee-tah.herokuapp.com/
 
 <!-- !["Home Page"](https://github.com/tw5033/lighthouse-midterm/blob/readme_work/public/images/screenshots/home.png)
 !["Menu](https://github.com/tw5033/lighthouse-midterm/blob/readme_work/public/images/screenshots/menu.png)
